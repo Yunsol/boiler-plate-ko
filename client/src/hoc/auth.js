@@ -3,7 +3,7 @@ import {useDispatch} from 'react-redux';
 import {auth} from '../_actions/user_action';
 
 export default function (SpecificComponent, option, adminRoute=null) {
-    // oprion
+    // option
     // null => 아무나출입
     //true => 로그인한 유저만 출입가능한페이지
     //false => 로그인한 유저는 출입불가능한페이지
@@ -30,7 +30,7 @@ export default function (SpecificComponent, option, adminRoute=null) {
                 }
             });
         }, [])
-        
+
         return (
             <SpecificComponent/>
         )
